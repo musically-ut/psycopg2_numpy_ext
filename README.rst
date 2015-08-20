@@ -1,9 +1,5 @@
-psycopg2-numpy-ext
+psycopg2_numpy_ext
 ==================
-
-.. image:: https://pypip.in/v/psycopg2-numpy-ext/badge.png
-    :target: https://pypi.python.org/pypi/psycopg2-numpy-ext
-    :alt: Latest PyPI version
 
 .. image:: https://travis-ci.org/musically-ut/psycopg2-numpy-ext.png
    :target: https://travis-ci.org/musically-ut/psycopg2-numpy-ext
@@ -15,18 +11,15 @@ Usage
 -----
 
 ::
-
-        from psycopg2_numpy_ext import register_numpy_types
-        register_numpy_types()
-
+    from psycopg2_numpy_ext import register_numpy_types
+    register_numpy_types()
 
 
 Installation
 ------------
 
 ::
-
-        pip install git:https://github.com/musically-ut/psycopg2-numpy-ext.git@master#egg=psycopg2-numpy-ext
+    pip install git:https://github.com/musically-ut/psycopg2-numpy-ext.git@master#egg=psycopg2_numpy_ext
 
 Requirements
 ^^^^^^^^^^^^
