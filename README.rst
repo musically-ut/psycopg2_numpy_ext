@@ -1,16 +1,19 @@
 psycopg2_numpy_ext
 ==================
 
-.. image:: https://travis-ci.org/musically-ut/psycopg2-numpy-ext.png
-   :target: https://travis-ci.org/musically-ut/psycopg2-numpy-ext
-   :alt: Latest Travis CI build status
-
 Adapters for Numpy's types for Psycopg2.
+
+``psycopg2`` does not ship with adapters for `numpy`'s types and is unable to interpolate them in queries naturally.
+
+Using `numpy`'s values as parameters results in ``ProgrammingError: can't adapt type 'numpy.int32'`` and similar errors with other ``numpy`` types. Such errors are common while mixing ``numpy``, ``pandas`` and ``psycopg2``.
+
+This package solves the problem by registering ``AsIs`` adapters for these types.
 
 Usage
 -----
 
 ::
+
     from psycopg2_numpy_ext import register_numpy_types
     register_numpy_types()
 
@@ -19,6 +22,7 @@ Installation
 ------------
 
 ::
+
     pip install git:https://github.com/musically-ut/psycopg2-numpy-ext.git@master#egg=psycopg2_numpy_ext
 
 Requirements
