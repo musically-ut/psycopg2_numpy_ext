@@ -23,7 +23,7 @@ Installation
 
 ::
 
-    pip install git:https://github.com/musically-ut/psycopg2-numpy-ext.git@master#egg=psycopg2_numpy_ext
+    pip install git+git://github.com/musically-ut/psycopg2_numpy_ext.git@master#egg=psycopg2_numpy_ext
 
 Requirements
 ^^^^^^^^^^^^
